@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Sakai Naming Conventions</title>
+        <link href="../../../style.css" type="text/css" rel="stylesheet" media="all">
+    </head>
+
+    <body>
+        <div class="title1"> <strong>File and Folder Naming Conventions</strong></div>
+
+        <div class="tab3"><a href="../../FacultyGuide.html"><button class="centerButton"><strong>&#8592; Previous </strong></button></a></div>
+
+        <div class="container1"><div class="boxText">If you use special characters (or any computer reserved characters) in a file or folder name, your site participants may not be able to access the file properly.</div> </div>
+
+        <ul class="listFormat">
+
+            <li> Whenever you create a new folder or file, follow these naming conventions to ensure that your folders and files work within Sakai and your course participants have proper access.</li>
+
+            <li>
+                <h2><button class="myBtn">Recommended Characters</button> <button class="myBtn">Unsupported Characters</button></h2>
+
+            </li>
+
+
+        </ul>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2 class="tab3">Recommended Characters</h2>
+                <ol class= "bulletList">
+                    <li>Letters: <strong class="symbolFont">A-Z</strong> <em>(either lowercase or uppercase)</em><br><br></li>
+                    <li>Numbers: <strong class="symbolFont">0-9</strong><br><br></li>
+                    <li>Hyphen: " <strong class="symbolFont">-</strong> "<br><br></li>
+                    <li>Underscore: " <strong class="symbolFont">_</strong> "<br><br></li>
+                </ol>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2 class="tab3">Unsupported Characters</h2>
+                <ol class= "bulletList">
+                    <li>Less Than: " <strong class="symbolFont">&lt;</strong> "<br></li>
+                    <li>Greater Than: " <strong class="symbolFont">&gt;</strong> "<br></li>
+                    <li>Equal: " <strong class="symbolFont">=</strong> "<br></li>
+                    <li>Semicolon: " <strong class="symbolFont">;</strong> "<br></li>
+                    <li>Colon: " <strong class="symbolFont">:</strong> "<br></li>
+                    <li>Double Quotation: <strong class="symbolFont">" "</strong><br></li>
+                    <li>Apostrophe: <strong class="symbolFont">'</strong> <br></li>
+                    <li>Period: " <strong class="symbolFont">.</strong> "<br></li>
+                    <li>Question Mark: " <strong class="symbolFont">?</strong> "<br></li>
+                    <li>Asterisk: " <strong class="symbolFont">*</strong> "<br></li>
+                    <li>Carat: " <strong class="symbolFont">^</strong> "<br></li>
+                    <li>Hash Mark: " <strong class="symbolFont">#</strong> "<br></li>
+                    <li>At Symbol: " <strong class="symbolFont">@</strong> "<br></li>
+                    <li>Ampersand: " <strong class="symbolFont">&amp;</strong> "<br></li>
+                    <li>Percent: " <strong class="symbolFont">%</strong> "<br></li>
+                    <li>Forward Slash: " <strong class="symbolFont">/</strong> "<br></li>
+                    <li>Backlash: " <strong class="symbolFont">\</strong> "<br></li>
+                    <li>Vertical Bar or Pipe: " <strong class="symbolFont">|</strong> "<br></li>
+                    <span class="close">&times;</span>
+
+                </ol>
+
+            </div>
+        </div>
+
+
+        <script> 
+            var modal = document.getElementsByClassName('modal');
+
+
+            var btn = document.getElementsByClassName("myBtn");
+
+
+            var span = document.getElementsByClassName("close");
+
+
+            btn[0].onclick = function() {
+                modal[0].style.display = "block";
+            }
+
+            btn[1].onclick = function() {
+                modal[1].style.display = "block";
+            }
+
+
+            span[0].onclick = function() {
+                modal[0].style.display = "none";
+            }
+
+            span[1].onclick = function() {
+                modal[1].style.display = "none";
+            }
+
+            span[2].onclick = function() {
+                modal[1].style.display = "none";
+            }
+
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "NONE";
+                }
+            }
+
+        </script>
+    </body>
+</html>

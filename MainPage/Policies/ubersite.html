@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ubersite Creation Request</title>
+    <link href="../../style.css" type="text/css" rel="stylesheet" media="all"/>
+    <style type="text/css">
+      body { font-family: sans-serif; text-align: center; }
+      dt { font-weight: bold; }
+      dd { margin-bottom: 1em; }
+      dt:before { content: "Q: "}
+      dd:before { content: "A: "}
+      p{ margin: 1em; margin-left:100px; margin-right: 100px;
+         padding:0;
+	 text-align: left;}
+header{ margin:0;
+    padding:0;
+        height:20px;}
+      table tr { text-align: left; vertical-align: center; margin: 1px;}
+      table td, table th { width: 50%; max-width: 50%; padding: 10px;  margin-left: auto; margin-right: auto; border: solid 1px #000; }
+      table { border: solid 1px #000;  margin-left: auto; margin-right: auto; width: 75%;}
+      input[type="text"] { width: 95%; text-align: center; }
+      #contact_list { width: 75%; margin-left: auto; margin-right: auto; }
+      ul { text-align: left; }
+      .output { display: none; }
+      </style>
+      <style type="text/css" media="print">
+      input { display: none; }
+      .output { display: block; }
+      #information { display: none; }
+      button { display: none; }
+      .noprint { display: none; }
+    </style>
+  </head>
+
+  <body>
+  <h2>Ubersite Creation Request Guideline</h2>
+  <p>An Ubersite allows you to have all the sections of your course into one consolidated site rather than several different sites. For example, if there is an ECON51 course with 3 sections, you can combine them into to one so that you can maintain files and tests for the whole course rather than doing it one by one for each section. </p>
+  <p>The guidelines to make one is as follows:</p>
+
+<table>
+<caption><h2><strong>Ubersite Request Template</strong></h2></caption>
+<tr>
+<th>Ubersite Title</td>
+<td>
+<span class="noprint">What your Ubersite title will be. Please follow the course site title convention as follows: School_Abbreviation CourseName CourseNumber Semester. EX. CM ECON 111 FA19</span>
+<input type="text" title="title"><div class="output"></div></td></tr>
+
+<tr>
+<th>FeederSite Info</td>
+<td>
+<span class="noprint">Which course sites you want to consilidate</span>
+<input type="text" title="feedersiteinfo"><div class="output"></div></td>
+</tr>
+<tr>
+<th>Unpublished Status</td>
+<td>
+<span class="noprint">Do you want to unpublish your feeder sites or not? (Yes/No)</span>
+<input type="text" title="unpublishedstatus" placeholder="YES/NO"><div class="output"></div></td>
+</tr>
+</table>
+<p id="information">Fill out the template above, print it or create a PDF file, and submit to your respective IT department.<p>
+<h2><button onclick="window.print();">Print</button></h2>
+<div id="contact_list">
+
+<ul>
+<li>CMC: <a href="mailto:help@claremontmckenna.edu">help@claremontmckenna.edu</a> or x70911</li>
+<li>HMC: <a href="mailto:help-desk@hmc.edu">helpdesk@hmc.edu</a> or x77777</li>
+<li>KGI: <a href="mailto:helpdesk@kgi.edu">helpdesk@kgi.edu</a> or x70387</li>
+    <li>POM: <a href="mailto:servicedesk@pomona.edu ">servicedesk@pomona.edu </a> or x18062</li>
+<li>PTZ: <a href="mailto:help@pitzer.edu">help@pitzer.edu</a> or x73065</li>
+
+<li>SCR: <a href="mailto:help@scrippscollege.edu">help@scrippscollege.edu</a> or x73406</li>
+<li>TCCS: <a href="mailto:TCCS-Sakai@claremont.edu">TCCS-Sakai@claremont.edu</a> <strong>&nbsp;</strong></li>
+</ul>
+</div>
+<script type="text/javascript">
+window.onload=init;
+function init()
+{
+	var inputs = document.getElementsByTagName('input');
+	for(var i=0; i<inputs.length; i++)
+	{
+		inputs[i].onkeyup=update;
+	}
+}
+function update()
+{
+	this.parentNode.getElementsByClassName('output')[0].innerHTML = this.value;
+}
+</script>
+
+  </body>
+</html>

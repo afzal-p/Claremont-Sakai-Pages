@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Online Assessments</title>
+        <link href="../../style.css" type="text/css" rel="stylesheet" media="all">
+    </head>
+
+    <body>
+
+        <div class="title1"> <strong>Online Assessments</strong></div> 
+
+        <div class="tab3"><a href="../FacultyGuide.html"><button class="centerButton"><strong>&#8592; Previous </strong></button></a></div>
+
+
+        <div class="container7"><div class="boxText">Sakai allows instructors to create and grade tests &amp; quizzes for their courses.</div> </div>
+
+        <ul class="listFormat">
+
+
+            <li>
+                <h2>Features</h2>
+                <ul class="bulletList">
+
+
+                    <li>Sakai assessments offer many different <button class="myBtn">question types</button><br><br></li>
+
+
+                    <li>Familiarize yourself with <strong><a href="https://sakai.claremont.edu/portal/help/TOCDisplay/content.hlp?docId=howdoicreateanassessmentintestsandquizzes" target="_blank">creating </a></strong> and  <strong><a href="ManagingOnlineExams.html">managing </a> </strong>assessments.</li>
+
+
+
+                    <li><br>For help grading online assessments see <a href="https://sakai.claremont.edu/portal/help/TOCDisplay/content.hlp?docId=howdoigradetestsquizzes" target="_blank">Tests &amp; Quizzes.</a> <br><br>You can  also enable the <strong><a href="submitFeature.html">auto-submit</a></strong> feature on behalf of your students.
+                        <br><br></li>
+
+
+                </ul>
+            </li>
+        </ul>
+
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2 class="tab3">Sakai Assessment Question Types</h2>
+                <ol class= "bulletList">
+                    <li class="tab3">Multiple Choice <br><br></li>
+                    <li class="tab3">Matching Question <br><br></li>
+                    <li class="tab3">True/False Question <br><br></li>
+                    <li class="tab3">Short answer/Essay <br><br></li>
+                    <li class="tab3">Fill in the blank<br><br></li>
+                    <li class="tab3">Numeric response question <br><br></li>
+                    <li class="tab3">Calculated question <br><br></li>
+                    <li class="tab3">Hot spot question <br><br></li>
+                    <li class="tab3">Survey <br><br></li>
+                    <li class="tab3">Student audio response question<br><br></li>
+                    <li class="tab3">File upload question <br><br></li>
+                    <li class="tab3">Multiple parts to an assessment<br><br></li>
+
+
+                </ol>
+
+            </div>
+        </div>
+        <script> 
+            var modal = document.getElementsByClassName('modal');
+
+
+            var btn = document.getElementsByClassName("myBtn");
+
+
+            var span = document.getElementsByClassName("close");
+
+
+            btn[0].onclick = function() {
+                modal[0].style.display = "block";
+            }
+
+
+
+            span[0].onclick = function() {
+                modal[0].style.display = "none";
+            }
+
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "NONE";
+                }
+            }
+
+        </script>
+    </body>
+
+</html>
